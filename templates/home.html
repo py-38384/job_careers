@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job And Careers</title>
+    <link rel="stylesheet" href="static/style.css">
+  </head>
+  <body>
+    <h1>Job And Careers</h1>
+    <div class="image-container">
+        <img class="banner" src="static/banner.jpg" alt="banner"/>
+    </div>
+    <h2>About Job And Careers</h2>
+    <p class="body-text">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+      accusantium unde aliquam recusandae aliquid, similique voluptates
+      doloremque suscipit voluptatum qui laudantium quis quos cum eveniet?
+      Placeat sed eligendi, reprehenderit provident obcaecati incidunt
+      temporibus corrupti.
+    </p>
+    <h2>Open Positions</h2>
+    <div class="jobs">
+      {% for job in jobs %}
+      {% include 'jobs.html' %}
+      {% endfor %}
+    </div>
+    <div class="contact"><button class="btn">Contact Us</button></div>
+    <footer>
+      <p>Copyright  2023, Piyal hossein</p>
+    </footer>
+  </body>
+</html>
